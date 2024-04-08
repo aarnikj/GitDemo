@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" name="Online Cart Test">
+    <classes>
+      <class name="abhatestlabs.TestCases.OnlineCartTest"/>
+    </classes>
+  </test> <!-- This test is to check online cart functionality-->
+  
+  <test thread-count="5" name="Test Validations">
+    <classes>
+      <class name="abhatestlabs.TestCases.TestValidations"/>
+    </classes>
+  </test> <!-- This test is for test errors validation-->
+  
+  <test thread-count="5" name="Base Test">
+    <classes>
+      <class name="abhatestlabs.TestComponents.BaseTest"/>
+    </classes>
+  </test> <!-- This holds base methods-->
+  
+</suite> <!-- Suite -->

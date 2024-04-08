@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="abhatestlabs.TestCases.TestValidations">
+        <methods>
+          <include name="launchingWebPage"/>
+          <include name="submitOrder"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- abhatestlabs.TestCases.TestValidations -->
+      <class name="abhatestlabs.TestCases.OnlineCartTest">
+        <methods>
+          <include name="launchingWebPage"/>
+          <include name="testTearDown"/>
+          <include name="submitOnlineOrder" invocation-numbers="0 1"/>
+          <include name="orderHistory"/>
+        </methods>
+      </class> <!-- abhatestlabs.TestCases.OnlineCartTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
